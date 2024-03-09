@@ -7,6 +7,9 @@ for i in formula:
         brackets_count += 1
     elif i == ')':
         brackets_count -= 1
+    if brackets_count <= -1:
+        print('Wrong expression!')
+        break
 
 if brackets_count % 2:
     print('Your expression missing bracket!')
