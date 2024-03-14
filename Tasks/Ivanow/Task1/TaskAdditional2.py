@@ -1,6 +1,7 @@
 numbers_l = [1, 5, 7, 3, 2, 6, 4]
 num_t = 11
 numbers_t = []
+numbers_q = [1, 5, 7, 3, 2, 6, 4]
 
 for i in range(len(numbers_l) // 2 + 1):
     num1 = numbers_l[i]
