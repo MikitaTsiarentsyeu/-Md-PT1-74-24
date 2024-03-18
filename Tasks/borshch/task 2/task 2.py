@@ -43,10 +43,6 @@ numbers = {
     "18": 'восемнадцать',
     "19": 'девятнадцать',
     "20": 'двадцать',
-    21: 'двадцать один',
-    22: '',
-    23: '',
-    24: ''
 }
 h = "час"
 m = "минут"
@@ -85,82 +81,60 @@ if minutes != "0":
         print("половина", numbers[hours])
     else:
         minutes = int(minutes)
-
-    if 45 <= minutes <= 59:
-        minutes1 = 60 - minutes
-        minutes1 = str(minutes1)
-        if hours == "1" or hours == "13":
-            numbers[hours] = "час"
-        if minutes1 == "1":
-            t = "одной"
-            m += "ы"
-        elif minutes1 == "2":
-            t = "двух"
-        elif minutes1 == "3":
-            t = "трех"
-        elif minutes1 == "4":
-            t = "четырех"
-        else:
-            t = numbers[minutes1].replace(numbers[minutes1][-1], "и")
-        print("без", t, m, numbers[hours])
-    if 0 < minutes < 45:
-        # if len(str(minutes)) == 1 or str(minutes)[0] != "1":
-        if str(minutes)[0] == "1" or (len(str(minutes)) == 2 and str(minutes)[1] == "1"):
-            m += "а"
-            numbers["1"] = "одна"
-        if (len(str(minutes)) == 1 and str(minutes)[0] in ["2", "3", "4"]) or (len(str(minutes)) == 2 and str(minutes)[1] in ["2", "3", "4"]):
-            m += "ы"
-            if (len(str(minutes)) == 1 and str(minutes)[0] == "2") or (len(str(minutes)) == 2 and str(minutes)[1] == "2"):
-                numbers["2"] = "две"
+        if 45 <= minutes <= 59:
+            minutes1 = 60 - minutes
+            minutes1 = str(minutes1)
+            if hours == "1" or hours == "13":
+                numbers[hours] = "час"
+            if minutes1 == "1":
+                t = "одной"
+                m += "ы"
+            elif minutes1 == "2":
+                t = "двух"
+            elif minutes1 == "3":
+                t = "трех"
+            elif minutes1 == "4":
+                t = "четырех"
+            else:
+                t = numbers[minutes1].replace(numbers[minutes1][-1], "и")
+            print("без", t, m, numbers[hours])
+        elif 0 < minutes < 45:
+            if str(minutes)[0] == "1" or (len(str(minutes)) == 2 and str(minutes)[0] != "1" and str(minutes)[1] == "1"):
+                m += "а"
+                numbers["1"] = "одна"
+            if (len(str(minutes)) == 1 and str(minutes)[0] in ["2", "3", "4"]) or (len(str(minutes)) == 2 and str(minutes)[1] in ["2", "3", "4"]):
+                m += "ы"
+                if (len(str(minutes)) == 1 and str(minutes)[0] == "2") or (len(str(minutes)) == 2 and str(minutes)[1] == "2"):
+                    numbers["2"] = "две"
             if len(str(minutes)) == 2 and str(minutes)[0] == "4":
                 numbers["4"] = "сорок "
                 numbers[str(minutes)] = numbers[str(minutes)[0]].__add__(numbers[str(minutes)[1]])
-        if len(str(minutes)) == 2 and str(minutes)[0] != "1":
-            numbers[str(minutes)] = numbers[str(minutes)[0]].__add__("дцать ").__add__(numbers[str(minutes)[1]])
+            elif len(str(minutes)) == 2 and str(minutes)[0] != "1":
+                numbers[str(minutes)] = numbers[str(minutes)[0]].__add__("дцать ").__add__(numbers[str(minutes)[1]])
 
 
-        if hours == "1" or hours == "13":
-            numbers[hours] = numbers[hours].replace(numbers[hours], "первого")
-        elif hours == "2":
-            numbers[hours] = numbers[hours].replace(numbers[hours], "второго")
-        elif hours == "3":
-            numbers[hours] = numbers[hours].replace(numbers[hours], "третьего")
-        elif hours == "4":
-            numbers[hours] = numbers[hours].replace(numbers[hours], "четвертого")
-        elif hours == "7":
-            numbers[hours] = numbers[hours].replace(numbers[hours], "седьмого")
-        elif hours == "8":
-            numbers[hours] = numbers[hours].replace(numbers[hours], "восьмого")
-        else:
-            numbers[hours] = numbers[hours].replace(numbers[hours][-1], "ого")
+            if hours == "1" or hours == "13":
+                numbers[hours] = numbers[hours].replace(numbers[hours], "первого")
+            elif hours == "2":
+                numbers[hours] = numbers[hours].replace(numbers[hours], "второго")
+            elif hours == "3":
+                numbers[hours] = numbers[hours].replace(numbers[hours], "третьего")
+            elif hours == "4":
+                numbers[hours] = numbers[hours].replace(numbers[hours], "четвертого")
+            elif hours == "7":
+                numbers[hours] = numbers[hours].replace(numbers[hours], "седьмого")
+            elif hours == "8":
+                numbers[hours] = numbers[hours].replace(numbers[hours], "восьмого")
+            else:
+                numbers[hours] = numbers[hours].replace(numbers[hours][-1], "ого")
 
-        if minutes == 22:
-            numbers[str(minutes)] = "двадцать две"
+            if minutes == 22:
+                numbers[str(minutes)] = "двадцать две"
+                print(numbers[str(minutes)], m, numbers[hours])
+                exit()
+            if minutes == 44:
+                numbers[str(minutes)] = "сорок четыре"
+                print(numbers[str(minutes)], m, numbers[hours])
+                exit()
+
             print(numbers[str(minutes)], m, numbers[hours])
-            exit()
-        if minutes == 44:
-            numbers[str(minutes)] = "сорок четыре"
-            print(numbers[str(minutes)], m, numbers[hours])
-            exit()
-
-        print(numbers[str(minutes)], m, numbers[hours])
-
-                    #elif len(numbers[]
-
-
-
-
-        #if hours ==
-
-                    #print("половина", numbers[hours])
-    #elif 0 < minutes < 45:
-        #print( , "минут", numbers[hours])
-
-
-#x = numbers["11"]
-#print(x.replace(x[-1], "ого"), x.__add__("1"), x+"f", numbers["9"].replace(numbers["9"][-1], "ого"))
-
-
-#print(type(x))
-
-#print(numbers[hours].replace(numbers[hours][-1], "ого"))
