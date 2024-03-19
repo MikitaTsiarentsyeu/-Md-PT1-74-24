@@ -1,25 +1,13 @@
-# numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-# user_input = input("Please input the numbers: ")
-# user_input = user_input.split()
-# res_sum = []
-# for i in user_input:
-#     if not numbers:
-#         print("Wrong input, please try again")
-#     if numbers:
-#         i = int(i)
-# res_sum = sum(user_input)
-# res_length = len(user_input)
-# res = sum(user_input) / len(user_input)
-# print(res)
+#First option
 
+x = [1, 3, 2, 5, 6, 7, 8, 10]
+average = sum(x) / len(x)
+print(average)
 
-num = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-x = ['1', '2', '3']
-res = []
-for i in input:
-    if x not in num:
-        print("Wrong input, please try again")
-res_sum = sum(user_input)
-res_length = len(user_input)
-res = sum(user_input) / len(user_input)
-print(res)
+#Second option
+
+import statistics
+
+x = [1, 3, 5, 2, 6, 8, 10]
+average = statistics.mean(x)
+print(average)
