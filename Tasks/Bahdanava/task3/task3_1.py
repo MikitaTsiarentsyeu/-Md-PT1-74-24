@@ -1,3 +1,4 @@
+# First option
 def counter():
     while True: 
         vowels = ['a', 'e', 'y', 'u', 'i', 'o']
@@ -12,5 +13,13 @@ def counter():
                     n = n+1
     print('Number of vowels: ', n)   
 counter()
+
+
+#Second option
+vowels = ['a', 'e', 'y', 'u', 'i', 'o']
+x = input("Write your string: ")
+y = sum([1 for i in x if i in vowels])
+print("The number of vowels is: ", y)
+
 
 

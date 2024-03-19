@@ -1,3 +1,4 @@
+#First option
 def word_counter():
    
     item_count = {}
@@ -12,4 +13,15 @@ def word_counter():
       
     print(item_count)
 word_counter()
+
+#Second option
+from collections import defaultdict
+my_string = "Today is a wonderful day!"
+split_string = my_string.split()
+res = defaultdict(int)
+for i in split_string:
+    res[i] += 1
+print(res)
+    
+
     
