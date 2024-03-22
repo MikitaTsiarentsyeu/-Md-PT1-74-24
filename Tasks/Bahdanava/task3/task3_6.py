@@ -1,4 +1,5 @@
-# OPTION 1
+# First option
+
 def vowels_remove(string):
 
     x = ['a', 'e', 'y', 'u', 'i', 'o']
@@ -13,7 +14,7 @@ string = 'Today is a wonderful day'
 vowels_remove(string)
 
 
-# OPTION 2
+# Second option
 
 x = ['a', 'e', 'y', 'u', 'i', 'o']
 string = 'Today is a wonderful day'

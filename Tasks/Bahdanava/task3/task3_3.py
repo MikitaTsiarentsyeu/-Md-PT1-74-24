@@ -1,4 +1,5 @@
 #First option
+
 def word_counter():
    
     item_count = {}
@@ -6,6 +7,7 @@ def word_counter():
     user_input = user_input.lower() 
     user_input = user_input.split()
     for i in user_input:
+        i = i.strip(",.?!")
         if i in item_count:
             item_count[i] +=  1
         else:
@@ -15,6 +17,7 @@ def word_counter():
 word_counter()
 
 #Second option
+
 from collections import defaultdict
 my_string = "Today is a wonderful day!"
 split_string = my_string.split()

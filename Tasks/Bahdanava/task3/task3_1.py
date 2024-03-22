@@ -1,4 +1,5 @@
 # First option
+
 def counter():
     while True: 
         vowels = ['a', 'e', 'y', 'u', 'i', 'o']
@@ -15,6 +16,7 @@ counter()
 
 
 #Second option
+
 vowels = ['a', 'e', 'y', 'u', 'i', 'o']
 x = input("Write your string: ")
 y = sum([1 for i in x if i in vowels])
