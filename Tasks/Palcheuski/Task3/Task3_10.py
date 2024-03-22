@@ -14,6 +14,11 @@ while True:
                 break
             a+=1
         else:
+            if i == 0 or i == 1:
+                continue 
             prime_numbers.append(i)
 
-    print(f'This number {max(prime_numbers)} max prime number in list')
+    if len(prime_numbers)!=0:
+        print(f'This number {max(prime_numbers)} max prime number in list')
+    else:
+        print('There are no prime numbers')
