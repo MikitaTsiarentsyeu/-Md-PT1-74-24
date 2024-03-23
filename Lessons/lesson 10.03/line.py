@@ -1,4 +1,5 @@
 eq = input("enter yore len eq in a format y=kx+b:\n")
+print(type(eq))
 x = int(input("enter the x value:\n"))
 
 eq = eq.replace(' ', '').replace('y=', '')
