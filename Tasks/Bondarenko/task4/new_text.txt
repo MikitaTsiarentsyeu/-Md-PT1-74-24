@@ -1,0 +1,83 @@
+The  February  TIOBE  Index  of the most
+popularprogramming   languages  is  out,
+andwhile   the  work  going  on  in  the
+backgroundof    TIOBE  calculations  has
+changed,not  much  has  shifted  in  the
+wayof    rankings.
+Python  continues  to
+sitatop  the  index,  with  C  and  Java
+directlybehind  it.  In Feb. 2021, those
+threealso  occupied  the  top  spot, but
+withPython    in    the    number  three
+position,C  at  top,  and Java in second
+place.
+Beyondthe    top    three,  there
+hasn’tbeen    much   movement  in  the
+index,with    positions    four  through
+eightunchanged  from  the same time last
+year.Those     slots    are    occupied,
+respectively,by  C++,  C#, Visual Basic,
+JavaScriptand  PHP.  Positions  nine and
+10swapped  from  Feb.  21  to  now, with
+AssemblyLanguage  and  SQL now occupying
+eachother's    positions.
+The   one  big
+moveof  note  between Feb. 2021 and Feb.
+2022was   with  the  Groovy  programming
+language,an    object-oriented  language
+forJava.  Over  the  course of the year,
+Groovyfell  from  12th  position all the
+wayto    20th,   putting  it  perilously
+closeto     the    "other    programming
+languages"list.
+TIOBE  CEO  Paul  Jansen
+attributesGroovy's    decline    to  the
+growthin  the  CI/CD  space.  Groovy was
+theonly    language   used  for  writing
+scriptson    Jenkins,    which    Jansen
+describesas  having  been "the only real
+playerin  the  CI/CD  domain"  early on.
+Now,with    platforms    that    don’t
+requireGroovy,    like    GitHub,  Azure
+DevOpsand  GitLab,  Groovy is losing its
+placeat  the  table.
+"Groovy  could have
+grownfurther  because  it  was the major
+script-basedalternative      for    Java
+runningon    the    same  JVM.  However,
+Kotlinis    taking  over  that  position
+rightnow,  so  I  think Groovy will have
+ahard   time,"  Jensen  said.
+The  TIOBE
+indexmay  not  be full of surprises this
+month,but  Jansen  did have a lot to say
+aboutthe  index  itself  this  month, as
+thisis   the  first  time  it  has  been
+compiledusing    Similarweb's    traffic
+analysisplatform  instead  of Alexa.
+"We
+haveused  Similarweb  for the first time
+thismonth  to  select search engines and
+fortunately,there  are  no  big  changes
+inthe  index  due to this swap. The only
+strikingdifference  is  that  the  top 3
+languages,Python,    C,  and  Java,  all
+gainedmore    than   1  percent  in  the
+rankings,"Jansen    said.
+TIOBE  decided
+tomake   the  switch  this  month  after
+Amazon'sannouncement  in  December  2021
+thatit    was  shutting  the  Alexa  web
+rankingservice  down,  effective  May 1,
+2022,ending     25    years    of    the
+program.
+Jansennoted    that  not  every
+websitehas   been  onboarded,  but  that
+theswitch    to  Similarweb  included  a
+switchto  using  HtmlUnit, a non-GUI web
+browserwith  APIs  that  let  Java  apps
+invokepages,  fill  forms  and  do other
+standardweb    browsing  activity.  This
+switchwill  eventually  allow  TIOBE  to
+includewebsites  it  was unable to crawl
+before,like  Stackoverflfow  and Github,
