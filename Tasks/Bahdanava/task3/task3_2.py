@@ -1,4 +1,5 @@
 #First option
+
 def sum_numbers(x):
     n = 0
     for i in x:
@@ -11,6 +12,7 @@ result = sum_numbers(x)
 print("The sum of even numbers: ", result)
         
 #Second option
+
 x = [1, 3, 5, 7, 10, 2, 4, 6]
 total_sum = sum(i for i in x if i % 2 == 0)
 print(total_sum)   
