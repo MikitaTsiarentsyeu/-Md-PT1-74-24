@@ -1,12 +1,10 @@
 l = ["two", "chair", "plate"]
 
 
-def reversed_str(l):
+def reversed_str(l):  # returns list of reversed strings from list
     new_l = []
     for i in l:
-        
-        l[i] = list(l[i]) , -1]
-        new_l.append(l[i])
+        m = list(i)
+        i = m[::-1]
+        new_l.append("".join(str(i).split("', '")).strip("'['").strip("'']"))
     print(new_l)
-
-print(reversed_str(l))
