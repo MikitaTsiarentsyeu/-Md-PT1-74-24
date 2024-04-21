@@ -1,9 +1,7 @@
 # Write a recursive function to find the Nth number in the Fibonacci sequence.
 def find_fibonacci_number(number):
-    if number == 1:
-        return 1
-    if number == 2:
-        return 1
+    if number <= 1:
+        return number
     return find_fibonacci_number(number - 1) + find_fibonacci_number(number - 2)
 
 
