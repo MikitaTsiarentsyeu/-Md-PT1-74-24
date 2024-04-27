@@ -2,5 +2,5 @@
 user_range = int(input("Enter len of numbers list: "))
 integer_list = []
 for i in range(0, user_range):
-    integer_list.append(int(input("Enter your data in integer format: ")))
+    integer_list.append(float(input("Enter your data in integer format: ")))
 print(max(integer_list))
