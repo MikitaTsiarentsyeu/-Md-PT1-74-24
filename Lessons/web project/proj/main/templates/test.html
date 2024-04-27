@@ -1,0 +1,13 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Test Django page</h1>
+        <p ct="{{current_time}}">Current time - {{current_time}}</p>
+        <img src="{% static 'main/img/photo.jpg' %}" width="50%" />
+    </body>
+</html>
