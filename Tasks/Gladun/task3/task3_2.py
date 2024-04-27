@@ -1,4 +1,4 @@
-user_input = list(input("input random numbers separated by spase: ").split(" "))
+user_input = list(input("input random numbers separated by space: ").split(" "))
 
 s = 0
 
