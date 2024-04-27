@@ -12,6 +12,8 @@ for i in range(0 , len(l)):
             continue
         elif int(l[i]) % 5 == 0:
             continue
+        elif int(l[i]) % 7 == 0:
+            continue
         else:
             result.append(l[i])
 
