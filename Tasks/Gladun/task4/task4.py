@@ -3,7 +3,6 @@ if user_input_length < 35:
     user_input_length = 35
 line = ""
 words = ""
-line_k = []
 space_left = 0
 
 with open('text.txt', 'r') as sample:
@@ -20,7 +19,6 @@ with open('text.txt', 'r') as sample:
                 else:
                     line = line.strip()
                     if len(line) < user_input_length:
-                        space_left = user_input_length - len(line)
                         s = line.find(" ")
                         while len(line) < user_input_length:
                             line = line[:s] + " " + line[s:]
