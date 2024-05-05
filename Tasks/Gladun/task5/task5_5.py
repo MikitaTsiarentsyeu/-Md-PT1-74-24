@@ -9,8 +9,6 @@ def sort_range(user_input):
     ranges_list = []
     func_break = False
     for i in range(len(user_input)):
-        if func_break == True:
-            break
         if i == 0:
             l = user_input[i]
             if user_input[i] + 1 == user_input[i + 1]:
@@ -19,7 +17,7 @@ def sort_range(user_input):
                 if i == len(user_input) - 1:
                     func_break = True
                     break
-                if j == 0:
+                elif j == 0:
                     ranges_list.append(f"{l}")
                     l = 0
                 else:
@@ -40,7 +38,7 @@ def sort_range(user_input):
                         l = 0
                         j = 0
                 break
-            if l == 0:
+            elif l == 0:
                 l = user_input[i]
                 if user_input[i] + 1 == user_input[i + 1]:
                     j = user_input[i + 1]
