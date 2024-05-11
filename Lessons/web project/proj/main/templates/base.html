@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Django Example</title>
+    <link rel="stylesheet" href="{% static 'main/style/style.css' %}">
+    <style>
+        a:visited {
+            color: white;
+        }
+        </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>
+            <a href="{% url 'posts' %}">
+                Blog Example
+            </a>
+        </h1>
+    </header>
+    <div class="container">
+      <div class="column">
+        
+        {% block content %}
+        {% endblock content %}
+
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Django Example</p>
+    </footer>
+  </body>
+</html>

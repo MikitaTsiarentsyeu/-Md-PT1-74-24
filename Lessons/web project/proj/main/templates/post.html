@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Posts</title>
-</head>
-<body>
-    <div>
+{% extends 'base.html' %}
+
+{% block content %}
+        
         <h3>{{post.title}}</h3>
         <p>by {{post.author.name}}</p>
         {% if post.image %}
-            <img width="50%" src="{{post.image.url}}">
+            <img width="90%" src="{{post.image.url}}">
         {% endif %}
         <p>{{post.content}}</p>
-    </div>
-</body>
-</html>
+
+{% endblock content %}
