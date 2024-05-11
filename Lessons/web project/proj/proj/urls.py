@@ -25,6 +25,7 @@ urlpatterns = [
     path('main/test/', main_views.test),
     path('posts/', main_views.show_posts),
     path('', main_views.show_posts, name="posts"),
+    path('posts/add', main_views.add_post, name="add_post"),
     # path('posts/<str:post_id>/', main_views.test),
     path('posts/<int:post_id>/', main_views.show_post, name="post"),
 ]
