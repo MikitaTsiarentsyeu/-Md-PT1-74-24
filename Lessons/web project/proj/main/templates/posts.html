@@ -13,6 +13,9 @@
                         <img width="90%" src="{{post.image.url}}">
                     {% endif %}
                     <p>by {{post.author.name}}</p>
+                    {% if post.id in vp %}
+                        <p>|viewed|</p>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>

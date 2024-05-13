@@ -1,3 +1,4 @@
+from typing import Any
 from django import forms
 from .models import Post
 from django.core.exceptions import ValidationError
@@ -19,3 +20,23 @@ class AddPost(forms.Form):
             raise ValidationError("posts title should be longer than 5 symbols")
         
         return title_data
+    
+    def clean_content(self):
+
+        content_data = self.cleaned_data['content']
+        try:
+            title_data = self.cleaned_data['title']
+        except KeyError:
+            return content_data
+
+        if title_data == content_data:
+            raise ValidationError("post content should not be the same as its title")
+
+        return content_data
+
+
+class AddPostModelForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = "title", "content", "post_type", "image"
