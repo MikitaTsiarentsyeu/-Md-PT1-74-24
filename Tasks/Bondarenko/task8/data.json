@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "year": "1986",
+        "genre": "thrash-metal"
+    },
+    {
+        "title": "Metallica",
+        "artist": "Metallica",
+        "year": "1991",
+        "genre": "heavy-metal"
+    },
+    {
+        "title": "__main__",
+        "artist": "dj python",
+        "year": "2024",
+        "genre": "experimental"
+    },
+    {
+        "title": "1",
+        "artist": "2",
+        "year": "3",
+        "genre": "4"
+    }
+]
