@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>Nastya Fitness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <STYLE>
+            body {
+              background-image: url('{% static "nastya/img/DSC06291.jpg" %}');
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding-bottom: 50px
+            }
+            footer {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+            }
+            table {
+              margin: 0 auto;
+              max-width: 1320px;
+              padding: 10px;
+            }
+            tr{
+              display: flex;
+              justify-content: space-evenly;
+              align-items: stretch;
+              margin: 0 auto;
+              max-width: 1320px;
+              padding: 10px;
+              align-content: space-around;
+              flex-direction: row;
+            }
+            td { padding: 10px }
+            .container {
+              display: flex;
+              justify-content: space-evenly;
+              align-items: stretch;
+              margin: 0 auto;
+              max-width: 1320px;
+              padding: 10px;
+              align-content: space-around;
+              flex-direction: row;
+            }
+            .column{
+              flex-basis: calc(50% - 20px);
+              background-color: #78909c6e;
+              margin: 0 10px;
+              padding: 20px;
+              border-radius: 15px;
+            }
+            .column-1{
+              flex-basis: calc(20% - 20px);
+              margin-bottom: 20px;
+              padding: 20px;
+              box-sizing: border-box;
+              border-radius: 15px;
+            }
+            .column-2{
+              flex-basis: calc(33% - 20px);
+              margin-bottom: 20px;
+              padding: 20px;
+              box-sizing: border-box;
+              border-radius: 15px;
+            }
+            .column-colab-choice{
+              background-color: white;
+              flex-basis: calc(25% - 20px);
+              margin-bottom: 20px;
+              padding: 20px;
+              box-sizing: border-box;
+              border-radius: 15px;
+            }
+            .preform{
+              background-color: orange;
+              width: 100%;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: stretch;
+              margin: 0 auto;
+              align-content: space-around;
+              flex-direction: row;
+            }
+            button{
+              background-color: #78909c6e;
+              border-radius: 15px;
+              position: relative;
+              left: 50%;
+            }
+            h1 {text-align:center;}
+            p {
+              text-indent: 20px;
+              text-align: center;
+              font-size: 20px;
+            }
+        </style>
+    </HEAD>
+    <BODY>
+        <header>
+            <a href="{%url 'main_page' %}"><strong>SSIA.FITNESS</strong></a>
+            <div CLASS="container">
+                <div>
+                    <h3><a href="{% url 'courses' %}"> Тренировки </a></h3>
+                </div>
+                <div>
+                    <h3><a href="{% url 'consultations' %}" > Консультации </a></h3>
+                </div>
+                <div>
+                    <h3><a href="{% url 'maintenance' %}"> Сопровожденипе </a></h3>
+                </div>
+                <div>
+                    <h3><a href="{% url 'manual' %}"> Методичка </a></h3>
+                </div>
+                <div>
+                    <h3><a href="{% url 'info' %}"> Немного обо мне </a></h3>
+                </div>
+            </div>
+        </header>
+
+            {% block content %}
+            {% endblock content %}
+
+        <footer>
+            <h5>&copy; 2024 Nastya SSIA.FITNESS</h5>
+        </footer>
+    </BODY>
+</HTML>
