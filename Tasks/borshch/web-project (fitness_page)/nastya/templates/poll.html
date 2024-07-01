@@ -1,0 +1,20 @@
+{% extends 'basic_page.html' %}
+
+{% block content %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">send form</button>
+    </form>
+
+    {% for q in questions %}
+        <p> {{q.question}}</p>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form_1.as_p}}
+            <button type="submit">send form</button>
+        </form>
+    {% endfor %}
+
+{% endblock content %}
