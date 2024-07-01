@@ -1,0 +1,71 @@
+{% extends 'basic_page.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>Выбери свой вариант.</h1>
+<div CLASS="container">
+    <div class="column-1" style="background-image: url('{% static 'nastya/img/DSC06042.jpg' %}'); background-size: cover">
+        <h1>Balance MORNING</h1>
+        <h3>Курс из 12 тренировок</h3>
+        <h3>Длительность: 10-15 мин</h3>
+        <h3>Сложность:</h3>
+        <h3>1990₽</h3>
+        <br>
+        <br>
+        <br>
+        <a href=" {% url 'morning' %}"><button>>Подробнее</button></a>
+    </div>
+
+    <div class="column-1" style="background-image: url('{% static 'nastya/img/IMG_4464_edit_107656013431489.jpg' %}'); background-size: cover">
+        <h1>Balance LITE training</h1>
+        <h3>Курс из 12 тренировок</h3>
+        <h3>Длительность: 25-50 мин</h3>
+        <h3>Сложность:</h3>
+        <h3>2990₽</h3>
+        <br>
+        <br>
+        <br>
+        <a href=" {% url 'lite' %}"><button>>Подробнее</button></a>
+    </div>
+
+    <div class="column-1" style="background-image: url('{% static 'nastya/img/IMG_4478_edit_107624792362222.jpg' %}'); background-size: cover">
+        <h1>Balance PRO training</h1>
+        <h3>Курс из 12 тренировок</h3>
+        <h3>Длительность: 40-60 мин</h3>
+        <h3>Сложность:</h3>
+        <h3>3990₽</h3>
+        <br>
+        <br>
+        <br>
+        <a href=" {% url 'pro' %}"><button>>Подробнее</button></a>
+    </div>
+
+    <div class="column-1" style="background-image: url('{% static 'nastya/img/IMG_4484_edit_107604038854934-01.jpeg' %}'); background-size: cover">
+        <h1>Balance CAMP</h1>
+        <h3>Длительность: 1 месяц</h3>
+        <h3>Сложность:</h3>
+        <h3>3690₽</h3>
+        <br>
+        <br>
+        <br>
+        <a href=" {% url 'camp' %}"><button>>Подробнее</button></a>
+    </div>
+
+    <div class="column-1" style="background-image: url('{% static 'nastya/img/IMG_4474_edit_107637715913783.jpg' %}'); background-size: cover">
+        <h1>Balance INDIVIDUAL</h1>
+        <h3>Длительность: 60 мин</h3>
+        <h3>Сложность: индивидуально</h3>
+        <h3>3000₽</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href=" {% url 'individual' %}"><button>>Подробнее</button></a>
+    </div>
+</div>
+{% endblock content %}
