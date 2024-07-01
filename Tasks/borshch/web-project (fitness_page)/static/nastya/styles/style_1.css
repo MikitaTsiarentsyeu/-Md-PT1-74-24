@@ -1,0 +1,329 @@
+/* Landing page */
+
+position: relative;
+width: 1440px;
+height: 2016px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 32px;
+
+
+/* IMG_4484_edit_107604038854934-01 1 */
+
+position: absolute;
+width: 1440px;
+height: 2094px;
+left: 0px;
+top: 0px;
+
+background: url(IMG_4484_edit_107604038854934-01.jpg);
+
+
+/* Header */
+
+position: absolute;
+width: 1440px;
+height: 112px;
+left: 0px;
+top: 0px;
+
+
+
+/* World Peas */
+
+position: absolute;
+width: 151px;
+height: 32px;
+left: 96px;
+top: 41px;
+
+font-family: 'Newsreader';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 100%;
+/* identical to box height, or 32px */
+letter-spacing: -0.01em;
+
+color: #141E0C;
+
+
+
+/* Shop */
+
+position: absolute;
+width: 50px;
+height: 26px;
+right: 600px;
+top: 43px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #141E0C;
+
+
+
+/* Newstand */
+
+position: absolute;
+width: 97px;
+height: 26px;
+right: 455px;
+top: 43px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #141E0C;
+
+
+
+/* Who we are */
+
+position: absolute;
+width: 112px;
+height: 26px;
+right: 295px;
+top: 43px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #141E0C;
+
+
+
+/* Button */
+
+position: absolute;
+width: 151px;
+height: 48px;
+right: 96px;
+top: 32px;
+
+background: #476730;
+border-radius: 999px;
+
+
+/* Basket */
+
+position: absolute;
+width: 67px;
+height: 26px;
+left: 24px;
+top: 11px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* shopping-bag */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 103px;
+top: 12px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 25%;
+bottom: 75%;
+
+border: 2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 41.67%;
+bottom: 41.67%;
+
+border: 2px solid #FFFFFF;
+
+
+/* We’re farmers, purveyors, and eaters of organically grown food. */
+
+position: absolute;
+width: 946px;
+height: 303px;
+left: 0px;
+top: 198px;
+
+font-family: 'Newsreader';
+font-style: normal;
+font-weight: 400;
+font-size: 84px;
+line-height: 120%;
+/* or 101px */
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #141E0C;
+
+
+
+/* Button */
+
+position: absolute;
+width: 255px;
+height: 64px;
+left: 992px;
+top: 198px;
+
+background: #476730;
+border-radius: 999px;
+
+
+/* Browse our shop */
+
+position: absolute;
+width: 159px;
+height: 26px;
+left: 48px;
+top: 19px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+/* identical to box height, or 26px */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Photo 1 */
+
+position: absolute;
+width: 504px;
+height: 693px;
+left: 0px;
+top: 587px;
+
+background: url(jonathan-kemper-1HHrdIoLFpU-unsplash 1.png);
+border-radius: 24px;
+
+
+/* Photo 2 */
+
+position: absolute;
+width: 780px;
+height: 480px;
+left: 550px;
+top: 587px;
+
+background: url(Stocksy_txp226f62b2aNe300_Medium_4582193 1.png);
+border-radius: 24px 0px 0px 24px;
+
+
+/* Central California — The person who grew these was located in Central California and, er, hopefully very well-compensated. */
+
+position: absolute;
+width: 577px;
+height: 52px;
+left: 0px;
+top: 1366px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+
+color: #141E0C;
+
+
+
+/* WHAT WE BELIEVE */
+
+position: absolute;
+width: 181px;
+height: 22px;
+left: 623px;
+top: 1366px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 160%;
+/* or 22px */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #141E0C;
+
+
+
+/* We believe in produce. Tasty produce. Produce like: Apples. Oranges. Limes. Lemons. Guavas. Carrots. Cucumbers. Jicamas. Cauliflowers. Brussels sprouts. Shallots. Japanese eggplants. Asparagus. Artichokes—Jerusalem artichokes, too. Radishes. Broccoli. Baby broccoli. Broccolini. Bok choy. Scallions. Ginger. Cherries. Raspberries. Cilantro. Parsley. Dill. What are we forgetting? Oh! Onions. Yams. Avocados. Lettuce. Arugula (to some, “rocket”). Persian cucumbers, in addition to aforementioned “normal” cucumbers. Artichokes. Zucchinis. Pumpkins. Squash (what some cultures call pumpkins). Sweet potatoes and potato-potatoes. Jackfruit. Monk fruit. Fruit of the Loom. Fruits of our labor (this website). Sorrel. Pineapple. Mango. Gooseberries. Blackberries. Tomatoes. Heirloom tomatoes. Beets. Chives. Corn. Endive. Escarole, which, we swear, we’re vendors of organic produce, but if you asked us to describe what escaroles are... */
+
+position: absolute;
+width: 822px;
+height: 512px;
+left: 0px;
+top: 1504px;
+
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+/* or 32px */
+
+color: #141E0C;
+
